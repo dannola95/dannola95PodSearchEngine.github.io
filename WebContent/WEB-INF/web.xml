@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	
+	<!-- Let the calls from the html page 
+		know where the method they will call is. 
+		Also, let the call know who they will be calling -->
+		
+		
+		
+	
+		
+		<servlet>
+			<servlet-name>abcd</servlet-name>
+			<servlet-class>com.Applications.pSearchAction</servlet-class> <!-- Called by html file -->
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>abcd</servlet-name>
+			<url-pattern>/sq</url-pattern> <!-- html file callie -->
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>abcde</servlet-name>
+			<servlet-class>com.Applications.subData</servlet-class> <!-- Called by html file -->
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>abcde</servlet-name>
+			<url-pattern>/subrequest</url-pattern> <!-- html file callie -->
+		</servlet-mapping>
+		
+		
+		<servlet>
+			<servlet-name>abcdef</servlet-name>
+			<servlet-class>com.Applications.Authentication</servlet-class> <!-- Called by html file -->
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>abcdef</servlet-name>
+			<url-pattern>/auth</url-pattern> <!-- html file callie -->
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>abcdefg</servlet-name>
+			<servlet-class>com.Applications.Genre</servlet-class> <!-- Called by html file -->
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>abcdefg</servlet-name>
+			<url-pattern>/genre</url-pattern> <!-- html file callie -->
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>abcdefgh</servlet-name>
+			<servlet-class>com.Applications.MostPopular</servlet-class> <!-- Called by html file -->
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>abcdefgh</servlet-name>
+			<url-pattern>/mpop</url-pattern> <!-- html file callie -->
+		</servlet-mapping>
+	
+		
+</web-app>
